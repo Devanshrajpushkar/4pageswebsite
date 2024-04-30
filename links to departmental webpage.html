@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title> Navigation Bar </title>
+        <style>
+            body{background-color: rgb(169, 249, 249);}
+           #nav ul{ 
+            list-style-type: none;
+            position: relative;}    
+            #nav ul li{display: inline;
+            position: relative;}
+            #nav ul ul{display: none;
+                  position: absolute;
+                  padding: 0.5;
+                  padding-top: 0.38 ;
+                  color: black;
+                
+                top: 100%;}
+            #nav ul ul li{float: none;}
+            #nav ul li:hover > ul {display: block;}
+            #nav ul li a{text-align: center;
+                    display: block;
+                    width: 175px;
+                    padding: 1em 0 ;
+                    text-decoration: none;
+                    background-color: #202020;
+                    color: white;
+                    border-radius: 15px ;
+                    
+            }
+            #nav ul li a.lastitem{border-right: none;}
+            #nav ul li a.current{color: white;}
+            
+            #nav > ul::after{content:"";
+        display: block;
+    clear: both;}
+    #nav ul ul li a {
+               background-color: grey;
+           }
+             
+
+        </style>
+    </head>
+    <body ><div class="div1" >
+        <nav id="nav" >
+            <ul>
+                <li> <a href="C:\Users\rakhs\OneDrive\Pen Drive...!\3Front End Web Design and Development\Assignment 4 (30 Apr)\index.html" target="_parent" > Home </a> </li>
+                <li><a href="C:\Users\rakhs\OneDrive\Pen Drive...!\3Front End Web Design and Development\Assignment 3\dog.html" target="f2" > Pictures </a> 
+                <ul>
+                    
+                </ul>
+            </li>
+            <li><a href="https://kmc.du.ac.in/" class="current" target="f2"> College Website </a></li>
+            <li> <a href="http://kmclibrary.saraswatilib.com/Booksearch.aspx" target="f2" > Search Book </a> </li>
+            <li> <a href="https://kmc.du.ac.in/linkedpage/8/101/54/All/All" target="f2" > Physics Department </a> </li>
+            
+            <li class="lastitem"><a href="#"> About </a> 
+            <ul class="aboutus" >
+                <li><a href="C:\Users\rakhs\OneDrive\Pen Drive...!\3Front End Web Design and Development\Assignment 4 (30 Apr)\resume.html"> About Me </a></li>
+                
+            </ul>
+        </li>
+            </ul>
+        </nav>
+        </div>
+    </body>
+</html>
