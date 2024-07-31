@@ -1,142 +1,147 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>My Web Page</title>
-  <style>
-    
-    .div1 {
-      position: relative;
-      margin-left: auto;
-      margin-top: 3.3%;
-      margin-right: 15%;
-      margin-bottom: 1%;
-      background-color: #202020;
-      margin-right: 2.5em;
-      border: 2px;
-      padding-top: 650px;
-      width: 67.5em;
-      height: 0.1em;
-      border-radius: 22px;}
-    .logo {
-      position: absolute;
-      left: 75;
-      top: 42%;}
-    .span1 {
-      position: absolute;
-      top: 3%;
-      left: 2%;
-      color: white;}
-      .font1{margin-left: 2em;}
-      .font2{margin-left: 0.6em;}
-      .br1{margin-left: 0.6em;}
-
-      #nav ul{
-            list-style-type: none;
-            position: relative;}
-            #nav ul li{float: left;
-            position: relative;}
-
-            #nav ul ul{display: none;
-                  position: absolute;
-                 padding: 0;
-                 left: 0;
-                 background-color: #202020;
-                 border-radius: 18px;
-                 padding-top: 0.38;
-                top: 100%;}
-
-            #nav ul ul li{float: none;}
-            #nav ul li:hover > ul {display: block;}
-            #nav ul li a{text-align: center;
-                    border-radius: 18px;
-                    display: block;
-                    width: 80;
-                    padding: 1em 0 ;
-                    text-decoration: none;
-                    background-color: #202020;
-                    color: white;
-                     
-            }
-            #nav ul li a.lastitem{border-right: none;}
-            #nav ul li a.current{color: white;}
-            .div1{margin-left: 22em;
-            }
-            #nav > ul::after{content:"";
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .div1 {
+            margin: 3.3% auto 1%;
+            background-color: #202020;
+            border-radius: 22px;
+            padding: 2em;
+            max-width: 1200px;
+            text-align: center;
+            color: white;
+        }
+        .logo {
             display: block;
-            clear: both;}
-            
-            #nav {
-            position: fixed;
-            top: 6%;
-            right: 15%;
-            font-family: light;}
-            .li1{margin-top: 15px;
-                  margin-left: 15px;}
-            .li2{width: 50;}
-            .devansh {
-                position: absolute;
-                top: 50;
-                left: 550; }
-            .button { padding:8;
-                 border: 2px solid white;
-                 border-radius: 10px; 
-                 background-color: #202020; 
-                 color: white;
-                 font-size: 13px;
-                 cursor: pointer;
-                margin-left: 3em;}
-            .button:hover {
-                  background-color: grey;
-                   border-color: white;}
-            .link1{text-decoration: none;
-                  color: white;}
-            #nav{ font-family: light;}
-
-            
-
-  </style>
+            margin: 0 auto 1em;
+            width: 200px;
+            height: 200px;
+        }
+        .span1 {
+            color: white;
+        }
+        .font1 {
+            display: block;
+            margin: 1em 0;
+        }
+        .font2 {
+            display: block;
+            font-size: 2em;
+            margin: 0.5em 0;
+        }
+        .br1 {
+            display: block;
+            margin-top: 0.5em;
+        }
+        #nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #202020;
+            border-radius: 18px;
+            margin: 0 auto;
+            display: inline-block;
+        }
+        #nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+        #nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 1em;
+            display: inline-block;
+        }
+        #nav ul li a:hover {
+            background-color: grey;
+            border-radius: 10px;
+        }
+        .button {
+            padding: 1em;
+            border: 2px solid white;
+            border-radius: 10px;
+            background-color: #202020;
+            color: white;
+            font-size: 13px;
+            cursor: pointer;
+            margin: 2em auto;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: grey;
+            border-color: white;
+        }
+        .link1 {
+            text-decoration: none;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .font2 {
+                font-size: 1.5em;
+            }
+            .font1 {
+                font-size: 1em;
+            }
+            .div1 {
+                padding: 1em;
+            }
+        }
+        @media (max-width: 480px) {
+            .font2 {
+                font-size: 1.2em;
+            }
+            .font1 {
+                font-size: 0.8em;
+            }
+            .logo {
+                width: 150px;
+                height: 150px;
+            }
+            .button {
+                padding: 0.5em;
+                font-size: 11px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <img src="solo guy.png" class="logo" width="200px" height="200px">
-  <div class="div1">
-    <span class="span1"><font face="cursive" >Hello Friends..!!</font> <br><br><br><br><br><br>
-        <font class="font1" size="4" > HI, I'M DEVANSH  RAJ PUSHKAR </font> <br> <br>
-        <font class="font2" size="10" face="Engravers MT"> I'M A WEB <br> <font class="br1" > DESIGNER</font> </font> <br> <br>
-        <font class="font1" size="4" color="#B7B7B7" > A Bit About Me. </font><br><br>
-        <font class="font1" color="silver" > "Hi there! I'm Devansh Raj Pushkar, a passionate web <br> <font class="font1" >designer  with a knack for creativity. With a keen eye <br></font> <font class="font1" > for detail  and a  dedication to excellence, I strive to   craft <br></font> <font class="font1" >engaging and user-friendly digital experiences.</font>
-         
-        <nav id="nav" >
-            <ul>
-                <li> <a href="index.html"> Home </a> </li>
-                <li><a href="personal.html"> Personal </a> 
+    <img src="solo guy.png" class="logo" alt="Logo">
+    <div class="div1">
+        <span class="span1">
+            <font face="cursive">Hello Friends..!!</font>
+            <br><br>
+            <font class="font1" size="4"> HI, I'M DEVANSH RAJ PUSHKAR </font>
+            <br><br>
+            <font class="font2" face="Engravers MT"> I'M A WEB <br><span class="br1"> DESIGNER</span> </font>
+            <br><br>
+            <font class="font1" size="4" color="#B7B7B7"> A Bit About Me. </font>
+            <br><br>
+            <font class="font1" color="silver"> "Hi there! I'm Devansh Raj Pushkar, a passionate web designer with a knack for creativity. With a keen eye for detail and a dedication to excellence, I strive to craft engaging and user-friendly digital experiences." </font>
+            <br><br><br>
+            <nav id="nav">
                 <ul>
-                    <li><a href="#">  </a></li>
-                    <li><a href="#">  </a></li>
-                    <li><a href="#">  </a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="personal.html">Personal</a></li>
+                    <li><a href="resume.html" class="current">Resume</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="https://www.instagram.com/devansh_raj_pushkar/"><img src="Instalogo.png" height="20px" width="20px" alt="Instagram"></a></li>
+                    <li><a href="https://twitter.com/home?lang=en"><img src="twitter.png" height="20px" width="20px" alt="Twitter"></a></li>
                 </ul>
-            </li>
-            <li><a href="resume.html" class="current"> Resume </a></li>
-            
-            <li class="lastitem"><a href="contacts.html"> Contacts </a> 
-                
-            <ul>
-                <li><a href="#">  </a></li>
-                <li><a href="#">  </a></li>
-            
-            </ul> 
-            <li class="li1" > | </li>
-            <li class="li2"> <a href="https://www.instagram.com/devansh_raj_pushkar/"> <img src="Instalogo.png" height="20px" width="20px" > </a> </li>
-            <li class="li2"> <a href="https://twitter.com/home?lang=en"> <img src="twitter.png" height="20px" width="20px" > </a> </li>
-          </li> 
-            </ul>
-        </nav> <br> <br> <br>
-        <img src="drpp.png" class="devansh">
-        
-        <button class="button">
-          <a href="https://github.com/Devanshrajpushkar?tab=repositories" class="link1">VIEW MY PROJECTS </a>
-        </button>
-    </span>
-    
-  </div>
-
+            </nav>
+            <br><br>
+            <button class="button">
+                <a href="https://github.com/Devanshrajpushkar?tab=repositories" class="link1">VIEW MY PROJECTS</a>
+            </button>
+        </span>
+    </div>
 </body>
 </html>
