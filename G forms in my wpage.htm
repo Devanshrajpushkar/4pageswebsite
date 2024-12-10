@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Styled Google Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .form-container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 800px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Hide default Google Form elements */
+        iframe {
+            display: block;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Feedback Form</h1>
+        <p>Please take a moment to fill out the form below. Your feedback is highly appreciated!</p>
+        <!-- Embed the Google Form inside iframe -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvCtRafnv5qKGIYCYpvVVfkHOJSEKT2Ke2jJXXMHgPp2Ypyg/viewform?usp=dialog" 
+            width="640" height="800"></iframe>
+    </div>
+</body>
+</html>
